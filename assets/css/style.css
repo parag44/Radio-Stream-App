@@ -1,0 +1,178 @@
+* {
+  -moz-box-sizing: border-box;
+       box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-size: 10px;
+  background: transparent url('../img/newbj.jpg') repeat;
+  overflow: hidden;
+}
+
+.player {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 32rem;
+  height: 46rem;
+  margin: -23rem 0 0 -16rem;
+  
+  overflow: hidden;
+}
+
+.firefox {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 32rem;
+  height: 46rem;
+  margin: -23rem 0 0 -16rem;
+  
+}
+
+
+.foxtail {
+  position: absolute;
+  right: -3rem;
+  bottom: -3.2rem;
+  width: 15.6rem;
+  height: 15.6rem;
+  -webkit-transform: scale(.5);
+          transform: scale(.5);
+  -webkit-animation: animate-tail 3.75s steps(44) infinite;
+          animation: animate-tail 3.75s steps(44) infinite;
+  background: url('../img/foxtail.png') 0 0 no-repeat;
+}
+
+@-webkit-keyframes animate-tail {
+  0% {
+    background-position: -6864px 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+@keyframes animate-tail {
+  0% {
+    background-position: -6864px 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.vinyl {
+  position: absolute;
+  top: 4rem;
+  left: 1rem;
+  width: 30rem;
+  height: 30rem;
+  -webkit-animation: spin-right 7s linear infinite;
+          animation: spin-right 7s linear infinite;
+  text-align: center;
+  border-radius: 50%;
+  background: url('../img/plate.png') no-repeat;
+}
+
+.spin {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.spin div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 100%;
+  box-shadow: .1rem .3rem .2rem rgba(255,255,255, .2);
+}
+
+.spin div:nth-child(1) {
+  width: 10.4rem;
+  height: 10.4rem;
+  margin: -5.2rem;
+  -webkit-animation: spin-right 3s linear infinite;
+          animation: spin-right 3s linear infinite;
+}
+
+.spin div:nth-child(2) {
+  width: 8.4rem;
+  height: 8.4rem;
+  margin: -4.2rem;
+  -webkit-animation: spin-left 2.4s linear infinite;
+          animation: spin-left 2.4s linear infinite;
+}
+
+@-webkit-keyframes spin-right {
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes spin-left {
+  100% {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+  }
+}
+
+@keyframes spin-right {
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes spin-left {
+  100% {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+  }
+}
+
+#needle {
+  position: absolute;
+  top: 11rem;
+  left: 14.4rem;
+  width: 6.2rem;
+  height: 7.6rem;
+  -webkit-transition: all 2s ease-in-out;
+          transition: all 2s ease-in-out;
+  -webkit-transform: rotate(-20deg);
+          transform: rotate(-20deg);
+  -webkit-transform-origin: 1.6rem 1.3rem;
+          transform-origin: 1.6rem 1.3rem;
+  background: url('../img/needle.png') no-repeat;
+}
+
+#needle.play {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
+button {
+  position: absolute;
+  bottom: 3rem;
+  left: 3rem;
+  width: 10rem;
+  height: 10rem;
+  font-size: 0;
+  cursor: pointer;
+  border: none;
+  background: url('../img/play.png') no-repeat;
+}
+
+button:focus {
+  outline: none;
+}
+
+.pause {
+  background: url('../img/pause.png') no-repeat;
+}

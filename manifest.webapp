@@ -1,0 +1,27 @@
+{
+  "name": "Cadena Dial Radio",
+  "description": "Cadena Dial always tries to become different. The radio adjusts its playlists, song selection and form of music everyday in order to vary in programming to their listeners. Thus, the radio has ended up being a fresh and so to their listeners they will also get refreshing taste of jazz music and other programs that the radio arranges. Cadena Dial official website address is www.cadenadial.com",
+  "version": "1.2",
+  "launch_path": "/index.html",
+  "permissions": {
+    "audio-channel-content": {
+      "description": "Use the audio channel for the music player"
+    }
+  },
+  "icons": {
+    "16": "/icons/16.png",
+    "32": "/icons/32.png",
+    "32": "/icons/32.png",
+    "48": "/icons/48.png",
+    "64": "/icons/64.png",
+    "72": "/icons/72.png",
+    "96": "/icons/96.png",
+    "128": "/icons/128.png"
+  },
+  "developer": {
+    "name": "Parag Das",
+    "url": "http://blog.paragbd.com"
+  },
+  "default_locale": "en",
+  "orientation": ["portrait"]
+}
